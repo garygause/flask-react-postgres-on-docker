@@ -17,12 +17,8 @@ class User(db.Model):
         self.email = email
 
 
-@app.route("/")
+@app.route("/api")
 def test():
    return jsonify(test="success")
-
-@app.route("/static/<path:filename>")
-def staticfiles(filename):
-   return send_from_directory(app.config["STATIC_FOLDER"], filename)
 
 
