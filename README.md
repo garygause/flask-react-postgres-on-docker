@@ -7,6 +7,10 @@ get things running
 docker-compose up -d --build
 
 
+db should be created by manage.py but let's check
+
+docker-compose exec api python manage.py create_db
+
 check database
 
 docker exec -t <id> bash
