@@ -12,3 +12,7 @@ check database
 docker exec -t <id> bash
 
 psql -U dev demo_db
+  
+or
+  
+docker-compose exec db psql --username=dev --dbname=demo_db
